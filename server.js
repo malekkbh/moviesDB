@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv')?.config();
 
 const express = require('express');
 const app = express();
@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGOLAB_URI, { useNewUrlParser: true })
 
 const db = mongoose.connection;
 db.on('error', (e) => console.error('db error: ', e));
-db.once('open', () => console.log('conncted to db'))
+db.once('open', () => console.log('conncted to db')) 
 
 app.use(express.json());
 
