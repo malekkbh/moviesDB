@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon server.js"
@@ -10,11 +9,21 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "heroku": "^7.59.1",
     "mogoose": "0.0.1-security",
     "mongoose": "^6.0.11"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
     "nodemon": "^2.0.13"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malekkbh/moviesDB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/malekkbh/moviesDB/issues"
+  },
+  "homepage": "https://github.com/malekkbh/moviesDB#readme",
+  "description": ""
 }

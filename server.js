@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.db_url, { useNewUrlParser: true }) 
+mongoose.connect(process.env.db_url_1, { useNewUrlParser: true }) 
 
 const db = mongoose.connection;
 db.on('error', (e) => console.error('db error: ', e));
@@ -15,4 +15,4 @@ app.use(express.json());
 const subscribersRouter = require('./routes/subscribers');
 app.use('/subscribers', subscribersRouter);
 
-app.listen(3000, () => console.log('server started'));
+app.listen(process.env.PORT || 3000, () => console.log('server started')); 
