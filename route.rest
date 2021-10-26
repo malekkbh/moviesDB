@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/617816c635bee9a218baad9c
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" :"malek" , 
+    "subscribersToChanel" : "abc"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/617816c635bee9a218baad9c
+
+####
+
+PATCH http://localhost:3000/subscribers/6178113537b6061c26c51f8d
+Content-Type: application/json
+
+{
+    "name":"amazing"
+}
