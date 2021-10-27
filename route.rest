@@ -1,6 +1,9 @@
 GET http://localhost:3000/subscribers
 
 ###
+GET http://localhost:3000/movies
+
+###
 
 GET http://localhost:3000/subscribers/617816c635bee9a218baad9c
 

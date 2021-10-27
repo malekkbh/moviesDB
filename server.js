@@ -16,6 +16,9 @@ db.once('open', () => console.log('conncted to db'))
 app.use(express.json());
 
 const subscribersRouter = require('./routes/subscribers');
+const moviesRouter = require('./routes/movies');
+
 app.use('/subscribers', subscribersRouter);
+app.use('/movies', moviesRouter);
 
 app.listen(process.env.PORT || 3000, () => console.log('server started'));
